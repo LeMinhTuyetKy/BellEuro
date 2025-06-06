@@ -213,3 +213,28 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 });
 
+// Footer Mobile Menu
+const footerMenuBtn = document.querySelector('.footer-mobile-menu-btn');
+const footerMobileMenu = document.querySelector('.footer-mobile-menu');
+const footerMenuClose = document.querySelector('.footer-mobile-menu-close');
+const footerMenuOverlay = document.createElement('div');
+footerMenuOverlay.className = 'footer-mobile-menu-overlay';
+document.body.appendChild(footerMenuOverlay);
+
+// Toggle Footer Menu
+function toggleFooterMenu() {
+    footerMobileMenu.classList.toggle('active');
+    footerMenuOverlay.classList.toggle('active');
+    document.body.style.overflow = footerMobileMenu.classList.contains('active') ? 'hidden' : '';
+}
+
+footerMenuBtn.addEventListener('click', toggleFooterMenu);
+footerMenuClose.addEventListener('click', toggleFooterMenu);
+footerMenuOverlay.addEventListener('click', toggleFooterMenu);
+
+// Close Footer Menu on Escape Key
+document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && footerMobileMenu.classList.contains('active')) {
+        toggleFooterMenu();
+    }
+});
