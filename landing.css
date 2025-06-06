@@ -714,7 +714,7 @@ body.menu-open {
 .hero-stats {
     display: flex;
     gap: 4rem;
-    margin: 0 auto;
+    margin: 10px;
     justify-content: center;
     opacity: 0;
     animation: fadeInUp 0.8s ease forwards 0.9s;
@@ -1697,7 +1697,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 p, li, span {
-    color: var(--text-color-light);
+    color: white);
 }
 
 /* Update section titles to match the theme */
