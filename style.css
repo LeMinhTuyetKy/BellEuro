@@ -1,0 +1,294 @@
+/* Dark Theme Styles */
+@media (prefers-color-scheme: dark) {
+    .dark-section {
+        background: var(--background-color) !important;
+        color: var(--text-color-dark) !important;
+    }
+
+    .dark-section .section-title {
+        color: var(--text-color-dark) !important;
+    }
+
+    .dark-card {
+        background: var(--card-background) !important;
+        border-color: var(--border-color) !important;
+        box-shadow: var(--shadow-md);
+    }
+
+    .dark-card:hover {
+        background: var(--card-background) !important;
+        transform: translateY(-5px);
+        box-shadow: var(--shadow-lg);
+    }
+
+    .dark-section .feature-card {
+        background: var(--card-background) !important;
+        border-color: var(--border-color) !important;
+    }
+
+    .dark-section .feature-card:hover {
+        background: var(--card-background) !important;
+    }
+
+    .dark-section .feature-icon {
+        color: var(--icon-color-light) !important;
+        background: var(--background-color) !important;
+    }
+
+    .dark-section .category-icon {
+        color: var(--icon-color-light) !important;
+        background: var(--background-color) !important;
+    }
+
+    .dark-section .category-text h3 {
+        color: var(--text-color-dark) !important;
+    }
+
+    .dark-section .category-text p {
+        color: var(--text-color-light) !important;
+    }
+
+    .dark-section .category-link {
+        color: var(--icon-color-light) !important;
+    }
+
+    .dark-section .category-link:hover {
+        color: var(--primary-color) !important;
+    }
+
+    .dark-section .order-step {
+        background: var(--card-background) !important;
+        border-color: var(--border-color) !important;
+    }
+
+    .dark-section .order-step:hover {
+        background: var(--card-background) !important;
+    }
+
+    .dark-section .step-header-content h4 {
+        color: var(--text-color-dark) !important;
+    }
+
+    .dark-section .step-header-content p {
+        color: var(--text-color-light) !important;
+    }
+
+    .dark-section .step-icon {
+        color: var(--icon-color-light) !important;
+        background: var(--background-color) !important;
+    }
+
+    .dark-section .step-number {
+        background: var(--primary-color) !important;
+        color: var(--icon-color-dark) !important;
+    }
+
+    /* Swiper Navigation in Dark Theme */
+    .dark-section .swiper-button-next,
+    .dark-section .swiper-button-prev {
+        color: var(--icon-color-light) !important;
+        background: var(--card-background) !important;
+    }
+
+    .dark-section .swiper-pagination-bullet {
+        background: var(--icon-color-light) !important;
+    }
+
+    .dark-section .swiper-pagination-bullet-active {
+        background: var(--primary-color) !important;
+    }
+
+    /* Override any light theme styles */
+    .dark-section * {
+        color-scheme: dark !important;
+    }
+
+    .dark-section .zigzag-content {
+        background: var(--card-background) !important;
+        border-color: var(--border-color) !important;
+    }
+
+    .dark-section .zigzag-content:hover {
+        background: var(--card-background) !important;
+    }
+
+    .dark-section .zigzag-item::before {
+        background: linear-gradient(to bottom, transparent, var(--icon-color-light), transparent) !important;
+    }
+
+    /* Add glass effect to all cards in dark section */
+    .dark-section .feature-card,
+    .dark-section .category-card,
+    .dark-section .order-step,
+    .dark-section .zigzag-content {
+        position: relative;
+        overflow: hidden;
+    }
+
+    .dark-section .feature-card::before,
+    .dark-section .category-card::before,
+    .dark-section .order-step::before,
+    .dark-section .zigzag-content::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: linear-gradient(135deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.02));
+        pointer-events: none;
+    }
+}
+
+/* Dark Theme Styles */
+.dark-section {
+    background-color: rgba(26, 32, 44, 0.85) !important;
+    backdrop-filter: blur(10px) !important;
+    -webkit-backdrop-filter: blur(10px) !important;
+    color: #F7FAFC !important;
+    padding: 60px 0;
+}
+
+.dark-section .section-title {
+    color: #F7FAFC !important;
+}
+
+.dark-card {
+    background-color: rgba(45, 55, 72, 0.85) !important;
+    backdrop-filter: blur(8px) !important;
+    -webkit-backdrop-filter: blur(8px) !important;
+    border: 1px solid rgba(74, 85, 104, 0.5) !important;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.dark-card:hover {
+    background-color: rgba(45, 55, 72, 0.95) !important;
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.dark-section .feature-card {
+    background-color: rgba(45, 55, 72, 0.85) !important;
+    backdrop-filter: blur(8px) !important;
+    -webkit-backdrop-filter: blur(8px) !important;
+    border: 1px solid rgba(74, 85, 104, 0.5) !important;
+}
+
+.dark-section .feature-card:hover {
+    background-color: rgba(45, 55, 72, 0.95) !important;
+}
+
+.dark-section .feature-icon {
+    color: #40C4FF !important;
+    background-color: rgba(64, 196, 255, 0.1) !important;
+}
+
+.dark-section .category-icon {
+    color: #40C4FF !important;
+    background-color: rgba(64, 196, 255, 0.1) !important;
+}
+
+.dark-section .category-text h3 {
+    color: #F7FAFC !important;
+}
+
+.dark-section .category-text p {
+    color: #E2E8F0 !important;
+}
+
+.dark-section .category-link {
+    color: #40C4FF !important;
+}
+
+.dark-section .category-link:hover {
+    color: #2196F3 !important;
+}
+
+.dark-section .order-step {
+    background-color: rgba(45, 55, 72, 0.85) !important;
+    backdrop-filter: blur(8px) !important;
+    -webkit-backdrop-filter: blur(8px) !important;
+    border: 1px solid rgba(74, 85, 104, 0.5) !important;
+}
+
+.dark-section .order-step:hover {
+    background-color: rgba(45, 55, 72, 0.95) !important;
+}
+
+.dark-section .step-header-content h4 {
+    color: #F7FAFC !important;
+}
+
+.dark-section .step-header-content p {
+    color: #E2E8F0 !important;
+}
+
+.dark-section .step-icon {
+    color: #40C4FF !important;
+    background-color: rgba(64, 196, 255, 0.1) !important;
+}
+
+.dark-section .step-number {
+    background-color: rgba(33, 150, 243, 0.9) !important;
+    color: #FFFFFF !important;
+}
+
+/* Swiper Navigation in Dark Theme */
+.dark-section .swiper-button-next,
+.dark-section .swiper-button-prev {
+    color: #40C4FF !important;
+    background: rgba(45, 55, 72, 0.85) !important;
+    backdrop-filter: blur(8px) !important;
+    -webkit-backdrop-filter: blur(8px) !important;
+}
+
+.dark-section .swiper-pagination-bullet {
+    background: rgba(64, 196, 255, 0.6) !important;
+}
+
+.dark-section .swiper-pagination-bullet-active {
+    background: rgba(33, 150, 243, 0.9) !important;
+}
+
+/* Override any light theme styles */
+.dark-section * {
+    color-scheme: dark !important;
+}
+
+.dark-section .zigzag-content {
+    background-color: rgba(45, 55, 72, 0.85) !important;
+    backdrop-filter: blur(8px) !important;
+    -webkit-backdrop-filter: blur(8px) !important;
+    border: 1px solid rgba(74, 85, 104, 0.5) !important;
+}
+
+.dark-section .zigzag-content:hover {
+    background-color: rgba(45, 55, 72, 0.95) !important;
+}
+
+.dark-section .zigzag-item::before {
+    background: linear-gradient(to bottom, transparent, rgba(64, 196, 255, 0.5), transparent) !important;
+}
+
+/* Add glass effect to all cards in dark section */
+.dark-section .feature-card,
+.dark-section .category-card,
+.dark-section .order-step,
+.dark-section .zigzag-content {
+    position: relative;
+    overflow: hidden;
+}
+
+.dark-section .feature-card::before,
+.dark-section .category-card::before,
+.dark-section .order-step::before,
+.dark-section .zigzag-content::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.05));
+    pointer-events: none;
+} 

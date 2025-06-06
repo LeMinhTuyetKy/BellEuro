@@ -1,19 +1,28 @@
 <!DOCTYPE html>
-<html lang="vi">
+<html lang="vi" style="color-scheme: light;">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="color-scheme" content="light">
+    <meta name="theme-color" content="#FAF8F5">
+    <meta name="forced-colors" content="none">
     <title>Kem Đánh Răng Bell Euro - Công Nghệ Sinh Học Thảo Mộc</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Roboto:wght@400;500;700&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="landing.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </head>
+
 <body>
     <!-- Header -->
     <header class="header">
         <nav class="nav-container">
             <div class="logo">
-                <h1>Bell Euro</h1>
+                <img src="images/no-image.webp" alt="Bell Euro">
             </div>
             <ul class="nav-links">
                 <li><a href="#features">Tính năng</a></li>
@@ -22,208 +31,429 @@
                 <li><a href="#testimonials">Đánh giá</a></li>
                 <li><a href="#contact">Liên hệ</a></li>
             </ul>
-            <button class="cta-button">Đặt hàng ngay</button>
+            <a href="https://elogi.vn/ds-san-pham?search=bell%20euro" class="cta-button">Đặt hàng ngay</a>
             <div class="mobile-menu-icon">
                 <i class="fas fa-bars"></i>
             </div>
         </nav>
+        <!-- Mobile Menu -->
+        <div class="mobile-menu">
+            <div class="mobile-menu-header">
+                <div class="logo">
+                    <img src="images/no-image.webp" alt="Bell Euro">
+                </div>
+                <button class="mobile-menu-close">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <ul class="mobile-nav-links">
+                <li><a href="#features"><i class="fas fa-star"></i>Tính năng</a></li>
+                <li><a href="#ingredients"><i class="fas fa-flask"></i>Thành phần</a></li>
+                <li><a href="#benefits"><i class="fas fa-heart"></i>Lợi ích</a></li>
+                <li><a href="#testimonials"><i class="fas fa-comments"></i>Đánh giá</a></li>
+                <li><a href="#contact"><i class="fas fa-envelope"></i>Liên hệ</a></li>
+            </ul>
+            <a href="https://elogi.vn/ds-san-pham?search=bell%20euro" class="mobile-cta-button">Đặt hàng ngay</a>
+        </div>
+        <div class="mobile-menu-overlay"></div>
     </header>
-
+    < class="main-content">
     <!-- Hero Section -->
     <section class="hero">
-        <div class="hero-content">
-            <h1 class="typewriter">Công Nghệ Sinh Học Thảo Mộc</h1>
-            <p class="animated-slogan">
-                <span>Bảo vệ</span>
-                <span>nụ cười</span>
-                <span>tự nhiên</span>
-                <span>với bạc hà</span>
-            </p>
-            <div class="hero-buttons">
-                <button class="primary-btn">Mua ngay</button>
-                <button class="secondary-btn">Tìm hiểu thêm</button>
+        <div class="hero-wrapper">
+            <!-- Khối 3D bên trái -->
+            <div class="hero-3d-scene">
+                <div class="hero-3d-cube">
+                    <img src="images/no-image.webp" class="hero-3d-face hero-3d-front" />
+                    <img src="images/no-image.webp" class="hero-3d-face hero-3d-right" />
+                    <img src="images/no-image.webp" class="hero-3d-face hero-3d-back" />
+                    <img src="images/no-image.webp" class="hero-3d-face hero-3d-left" />
+                    <img src="images/no-image.webp" class="hero-3d-face hero-3d-top" />
+                    <img src="images/no-image.webp" class="hero-3d-face hero-3d-bottom" />
+                </div>
+            </div>
+    
+            <!-- Nội dung bên phải -->
+            <div class="hero-content">
+                <h1 class="typewriter">Tập Đoàn Bell Euro</h1>
+                <p class="hero-description">
+                    Bell Euro thương hiệu nổi tiếng về sản phẩm chăm sóc cá nhân và gia đình,
+                    đặc biệt áp dụng công nghệ sinh học và hương liệu cao cấp từ Đức.
+                </p>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-number">15+</span>
+                        <span class="stat-label">Năm kinh nghiệm</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">100+</span>
+                        <span class="stat-label">Sản phẩm</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">1M+</span>
+                        <span class="stat-label">Khách hàng</span>
+                    </div>
+                </div>
+                <div class="hero-buttons">
+                    <button class="primary-btn">Khám phá ngay</button>
+                    <button class="secondary-btn">Tìm hiểu thêm</button>
+                </div>
             </div>
         </div>
-
-        <div class="hero-image">
-            <img src="images/kem-danh-rang-cong-nghe-sinh-h_0x0_697787147.webp" alt="Kem đánh răng Bell Euro">
-        </div>
-        
     </section>
+    
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="about-wrapper">
+            <div class="about-content" data-aos="fade-left">
+                <div class="about-columns">
+                    <div class="about-left-column">
+                        <h2 class="section-title"><span class="highlight">Bell Euro</span> - Tiên Phong Công Nghệ Sinh
+                            Học</h2>
+                        <p class="section-description">Tập đoàn Bell Euro tự hào là đơn vị tiên phong trong lĩnh vực
+                            chăm sóc sức khỏe và làm đẹp với công nghệ sinh học hiện đại. Với hơn 15 năm kinh nghiệm,
+                            chúng tôi cam kết mang đến những sản phẩm an toàn, lành tính, không gây kích ứng và mang lại
+                            hiệu quả vượt trội trong việc làm sạch, dưỡng ẩm và giữ hương thơm lâu dài.</p>
+                    </div>
+                    <div class="about-divider"></div>
+                    <div class="about-right-column">
+                        <div class="about-features">
+                            <div class="feature-item left" data-aos="fade-up" data-aos-delay="300">
+                                <div class="feature-icon"><i class="fas fa-microscope"></i></div>
+                                <div class="feature-text">
+                                    <h3>Công Nghệ Sinh Học Tiên Tiến</h3>
+                                    <p>Ứng dụng công nghệ sinh học hiện đại từ Đức, đảm bảo hiệu quả và an toàn tuyệt
+                                        đối</p>
+                                </div>
+                            </div>
+                            <div class="feature-item right" data-aos="fade-up" data-aos-delay="400">
+                                <div class="feature-icon"><i class="fas fa-certificate"></i></div>
+                                <div class="feature-text">
+                                    <h3>Chất Lượng Được Đảm Bảo</h3>
+                                    <p>Đạt chứng nhận ISO 9001:2015 và tuân thủ nghiêm ngặt các tiêu chuẩn quốc tế</p>
+                                </div>
+                            </div>
+                            <div class="feature-item left" data-aos="fade-up" data-aos-delay="500">
+                                <div class="feature-icon"><i class="fas fa-leaf"></i></div>
+                                <div class="feature-text">
+                                    <h3>Thành Phần Tự Nhiên</h3>
+                                    <p>Sử dụng các thành phần tự nhiên cao cấp, không gây kích ứng, phù hợp với mọi loại
+                                        da</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
 
     <!-- Features Section -->
-    <section id="features" class="features">
+    <section class="features-timeline dark-section">
         <div class="container">
-            <h2 class="section-title">Tính Năng Nổi Bật</h2>
-            <div class="features-grid">
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <i class="fas fa-dna"></i>
+            <h2 class="section-title text-light">Các Tính Năng Nổi Bật Của Sản Phẩm Bell Euro</h2>
+    
+            <!-- Swiper Container -->
+            <div class="swiper features-swiper">
+                <div class="swiper-wrapper">
+                    <!-- Slide 1 -->
+                    <div class="swiper-slide feature-card">
+                        <div class="feature-icon"><i class="fas fa-dna"></i></div>
+                        <div class="feature-content">
+                            <h3>Công Nghệ Sinh Học Tiên Tiến</h3>
+                            <p>Bell Euro ứng dụng công nghệ sinh học tiên tiến để tạo ra các sản phẩm hiệu quả, an toàn và thân thiện với môi trường.</p>
+                        </div>
                     </div>
-                    <h3>Công Nghệ Sinh Học</h3>
-                    <p>Ứng dụng công nghệ sinh học tiên tiến trong chăm sóc răng miệng</p>
+    
+                    <!-- Slide 2 -->
+                    <div class="swiper-slide feature-card">
+                        <div class="feature-icon"><i class="fas fa-shield-alt"></i></div>
+                        <div class="feature-content">
+                            <h3>An Toàn Và Lành Tính</h3>
+                            <p>Sản phẩm không gây kích ứng da hoặc ảnh hưởng đến sức khỏe.</p>
+                        </div>
+                    </div>
+    
+                    <!-- Slide 3 -->
+                    <div class="swiper-slide feature-card">
+                        <div class="feature-icon"><i class="fas fa-chart-line"></i></div>
+                        <div class="feature-content">
+                            <h3>Hiệu Quả Vượt Trội</h3>
+                            <p>Làm sạch, diệt khuẩn, chăm sóc da và tóc tối ưu.</p>
+                        </div>
+                    </div>
+    
+                    <!-- Slide 4 -->
+                    <div class="swiper-slide feature-card">
+                        <div class="feature-icon"><i class="fas fa-spa"></i></div>
+                        <div class="feature-content">
+                            <h3>Hương Thơm Tự Nhiên</h3>
+                            <p>Sử dụng thành phần thiên nhiên mang lại cảm giác thư giãn.</p>
+                        </div>
+                    </div>
+    
+                    <!-- Slide 5 -->
+                    <div class="swiper-slide feature-card">
+                        <div class="feature-icon"><i class="fas fa-award"></i></div>
+                        <div class="feature-content">
+                            <h3>Đẳng Cấp Châu Âu</h3>
+                            <p>Đạt chuẩn Châu Âu – chứng nhận chất lượng cao và an toàn.</p>
+                        </div>
+                    </div>
+    
+                    <!-- Slide 6 -->
+                    <div class="swiper-slide feature-card">
+                        <div class="feature-icon"><i class="fas fa-users"></i></div>
+                        <div class="feature-content">
+                            <h3>Chăm Sóc Toàn Diện</h3>
+                            <p>Sản phẩm cho mọi thành viên trong gia đình – phụ nữ, nam giới và trẻ em.</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <i class="fas fa-seedling"></i>
+                <!-- Add Navigation -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Product Categories Section -->
+    <section class="product-categories dark-section">
+        <div class="container">
+            <h2 class="section-title text-light">Danh Mục Sản Phẩm</h2>
+            <div class="categories-zigzag">
+                <div class="zigzag-item left">
+                    <div class="zigzag-content dark-card">
+                        <div class="category-icon">
+                            <i class="fas fa-shower"></i>
+                        </div>
+                        <div class="category-text">
+                            <h3>Xà Phòng, Sữa Tắm</h3>
+                            <p>Sản phẩm chăm sóc cơ thể với công nghệ sinh học</p>
+                            <a href="https://elogi.vn/ds-san-pham?search=bell+euro&page=1" class="category-link">Xem
+                                thêm <i class="fas fa-arrow-right"></i></a>
+                        </div>
                     </div>
-                    <h3>Thảo Mộc Tự Nhiên</h3>
-                    <p>Chiết xuất từ các loại thảo mộc thiên nhiên an toàn</p>
                 </div>
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <i class="fas fa-leaf"></i>
+
+                <div class="zigzag-item right">
+                    <div class="zigzag-content dark-card">
+                        <div class="category-icon">
+                            <i class="fas fa-female"></i>
+                        </div>
+                        <div class="category-text">
+                            <h3>Dung Dịch Vệ Sinh Phụ Nữ</h3>
+                            <p>Chăm sóc vệ sinh phụ nữ an toàn, lành tính</p>
+                            <a href="https://elogi.vn/ds-san-pham?search=bell+euro&page=1" class="category-link">Xem
+                                thêm <i class="fas fa-arrow-right"></i></a>
+                        </div>
                     </div>
-                    <h3>Hương Bạc Hà</h3>
-                    <p>Hương thơm bạc hà tươi mát, sảng khoái</p>
                 </div>
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <i class="fas fa-shield-alt"></i>
+
+                <div class="zigzag-item left">
+                    <div class="zigzag-content dark-card">
+                        <div class="category-icon">
+                            <i class="fas fa-paint-roller"></i>
+                        </div>
+                        <div class="category-text">
+                            <h3>Sơn Nhà</h3>
+                            <p>Sơn chất lượng cao, thân thiện môi trường</p>
+                            <a href="https://elogi.vn/ds-san-pham?search=bell+euro&page=1" class="category-link">Xem
+                                thêm <i class="fas fa-arrow-right"></i></a>
+                        </div>
                     </div>
-                    <h3>Bảo Vệ Toàn Diện</h3>
-                    <p>Bảo vệ răng và nướu khỏi vi khuẩn gây hại</p>
+                </div>
+
+                <div class="zigzag-item right">
+                    <div class="zigzag-content dark-card">
+                        <div class="category-icon">
+                            <i class="fas fa-tshirt"></i>
+                        </div>
+                        <div class="category-text">
+                            <h3>Nước Giặt Tẩy Quần Áo</h3>
+                            <p>Giặt sạch, tẩy vết bẩn hiệu quả</p>
+                            <a href="https://elogi.vn/ds-san-pham?search=bell+euro&page=1" class="category-link">Xem
+                                thêm <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="zigzag-item left">
+                    <div class="zigzag-content dark-card">
+                        <div class="category-icon">
+                            <i class="fas fa-wind"></i>
+                        </div>
+                        <div class="category-text">
+                            <h3>Nước Xả</h3>
+                            <p>Làm mềm vải, hương thơm lâu</p>
+                            <a href="https://elogi.vn/ds-san-pham?search=bell+euro&page=1" class="category-link">Xem
+                                thêm <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="zigzag-item right">
+                    <div class="zigzag-content dark-card">
+                        <div class="category-icon">
+                            <i class="fas fa-utensils"></i>
+                        </div>
+                        <div class="category-text">
+                            <h3>Tẩy Rửa Nhà Bếp</h3>
+                            <p>Làm sạch bếp, an toàn thực phẩm</p>
+                            <a href="https://elogi.vn/ds-san-pham?search=bell+euro&page=1" class="category-link">Xem
+                                thêm <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="zigzag-item left">
+                    <div class="zigzag-content dark-card">
+                        <div class="category-icon">
+                            <i class="fas fa-home"></i>
+                        </div>
+                        <div class="category-text">
+                            <h3>Tẩy Rửa Nhà Cửa</h3>
+                            <p>Vệ sinh toàn diện cho ngôi nhà của bạn</p>
+                            <a href="https://elogi.vn/ds-san-pham?search=bell+euro&page=1" class="category-link">Xem
+                                thêm <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Ingredients Section -->
-    <section id="ingredients" class="ingredients">
-        <div class="container">
-            <h2 class="section-title">Thành Phần Tự Nhiên</h2>
-            <div class="ingredients-grid">
-                <div class="ingredient-card">
-                    <div class="ingredient-icon">
-                        <i class="fas fa-seedling"></i>
-                    </div>
-                    <h3>Chiết Xuất Thảo Mộc</h3>
-                    <p>Kết hợp các loại thảo mộc quý hiếm</p>
-                </div>
-                <div class="ingredient-card">
-                    <div class="ingredient-icon">
-                        <i class="fas fa-flask"></i>
-                    </div>
-                    <h3>Công Nghệ Sinh Học</h3>
-                    <p>Ứng dụng công nghệ sinh học tiên tiến</p>
-                </div>
-                <div class="ingredient-card">
-                    <div class="ingredient-icon">
-                        <i class="fas fa-leaf"></i>
-                    </div>
-                    <h3>Bạc Hà Tự Nhiên</h3>
-                    <p>Tinh dầu bạc hà nguyên chất</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Benefits Section -->
     <section id="benefits" class="benefits">
         <div class="container">
-            <h2 class="section-title">Lợi Ích Khi Sử Dụng</h2>
-            <div class="benefits-grid">
-                <div class="benefit-item">
-                    <div class="benefit-icon">
-                        <i class="fas fa-check-circle"></i>
+            <h2 class="section-title">Lợi Ích Khi Sử Dụng Sản Phẩm Bell Euro</h2>
+
+            <!-- Swiper Container -->
+            <div class="swiper benefits-swiper">
+                <div class="swiper-wrapper">
+                    <!-- Slide 1 -->
+                    <div class="swiper-slide benefit-card">
+                        <div class="benefit-icon"><i class="fas fa-heartbeat"></i></div>
+                        <div class="benefit-content">
+                            <h3>Bảo Vệ Sức Khỏe</h3>
+                            <p>Dung dịch vệ sinh phụ nữ giúp kháng khuẩn, kháng viêm, và cân bằng độ pH vùng kín, giúp
+                                ngăn ngừa các vấn đề về sức khỏe phụ khoa.</p>
+                        </div>
                     </div>
-                    <h3>Bảo Vệ Tự Nhiên</h3>
-                    <p>Bảo vệ răng và nướu bằng thành phần tự nhiên</p>
+
+                    <!-- Slide 2 -->
+                    <div class="swiper-slide benefit-card">
+                        <div class="benefit-icon"><i class="fas fa-moon"></i></div>
+                        <div class="benefit-content">
+                            <h3>Cải Thiện Giấc Ngủ</h3>
+                            <p>Sữa tắm thảo dược giúp cải thiện giấc ngủ, giảm căng thẳng, và lo âu.</p>
+                        </div>
+                    </div>
+
+                    <!-- Slide 3 -->
+                    <div class="swiper-slide benefit-card">
+                        <div class="benefit-icon"><i class="fas fa-spa"></i></div>
+                        <div class="benefit-content">
+                            <h3>Làm Đẹp Da, Tóc</h3>
+                            <p>Các sản phẩm chăm sóc tóc và da giúp tóc chắc khỏe, bóng mượt, và giảm rụng tóc.</p>
+                        </div>
+                    </div>
+
+                    <!-- Slide 4 -->
+                    <div class="swiper-slide benefit-card">
+                        <div class="benefit-icon"><i class="fas fa-paint-roller"></i></div>
+                        <div class="benefit-content">
+                            <h3>Sơn Ngoại Thất</h3>
+                            <p>Sơn ngoại thất siêu cao cấp giúp trang trí và bảo vệ bề mặt tường.</p>
+                        </div>
+                    </div>
+
+                    <!-- Slide 5 -->
+                    <div class="swiper-slide benefit-card">
+                        <div class="benefit-icon"><i class="fas fa-shield-alt"></i></div>
+                        <div class="benefit-content">
+                            <h3>An Toàn Và Lành Tính</h3>
+                            <p>Sản phẩm Bell Euro an toàn với mọi loại da và không gây hại cho da đầu.</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="benefit-item">
-                    <div class="benefit-icon">
-                        <i class="fas fa-certificate"></i>
+                <!-- Pagination Dots (optional) -->
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Customer Protection Policies Section -->
+    <section id="policies" class="policies">
+        <div class="container">
+            <h2 class="section-title">Chính Sách 100% Đảm Bảo Quyền Lợi Người Dùng</h2>
+            <div class="policies-grid">
+                <div class="policy-card">
+                    <div class="policy-icon">
+                        <i class="fas fa-shield-alt"></i>
                     </div>
-                    <h3>An Toàn Tuyệt Đối</h3>
-                    <p>Không chứa chất gây hại, an toàn cho mọi lứa tuổi</p>
+                    <div class="policy-content">
+                        <h3>Chính Sách Bảo Hành</h3>
+                        <p>Cam kết bảo hành chính hãng, hỗ trợ tận tâm trong suốt quá trình sử dụng sản phẩm</p>
+                    </div>
                 </div>
-                <div class="benefit-item">
-                    <div class="benefit-icon">
-                        <i class="fas fa-smile"></i>
+                <div class="policy-card">
+                    <div class="policy-icon">
+                        <i class="fas fa-clipboard-check"></i>
                     </div>
-                    <h3>Hơi Thở Thơm Mát</h3>
-                    <p>Hương bạc hà tươi mát kéo dài suốt ngày</p>
+                    <div class="policy-content">
+                        <h3>Chính Sách Kiểm Hàng</h3>
+                        <p>Kiểm tra kỹ lưỡng từng sản phẩm trước khi giao đến tay khách hàng</p>
+                    </div>
+                </div>
+                <div class="policy-card">
+                    <div class="policy-icon">
+                        <i class="fas fa-truck"></i>
+                    </div>
+                    <div class="policy-content">
+                        <h3>Chính Sách Vận Chuyển</h3>
+                        <p>Giao hàng nhanh chóng, đúng hẹn, miễn phí vận chuyển cho đơn hàng từ 500K</p>
+                    </div>
+                </div>
+                <div class="policy-card">
+                    <div class="policy-icon">
+                        <i class="fas fa-lock"></i>
+                    </div>
+                    <div class="policy-content">
+                        <h3>Chính Sách Bảo Mật</h3>
+                        <p>Bảo vệ tuyệt đối thông tin cá nhân và thanh toán của khách hàng</p>
+                    </div>
+                </div>
+                <div class="policy-card">
+                    <div class="policy-icon">
+                        <i class="fas fa-comment-dots"></i>
+                    </div>
+                    <div class="policy-content">
+                        <h3>Chính Sách Khiếu Nại</h3>
+                        <p>Tiếp nhận và xử lý khiếu nại trong vòng 24h, đảm bảo quyền lợi khách hàng</p>
+                    </div>
+                </div>
+                <div class="policy-card">
+                    <div class="policy-icon">
+                        <i class="fas fa-exchange-alt"></i>
+                    </div>
+                    <div class="policy-content">
+                        <h3>Chính Sách Đổi Trả</h3>
+                        <p>Đổi trả miễn phí trong 30 ngày, hoàn tiền 100% nếu sản phẩm không đúng cam kết</p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Product Details -->
-    <section id="product-details" class="product-details">
+    <section class="order-guide dark-section" id="order">
         <div class="container">
-            <div class="product-info-grid">
-                <div class="product-image">
-                    <img src="images/tuyp-kem-danh-rang-bellhome-2-1705043069.jpg" alt="Chi tiết sản phẩm Bell Euro">
-                </div>
-                <div class="product-specs">
-                    <h2>Thông Tin Sản Phẩm</h2>
-                    <ul>
-                        <li><strong>Thương hiệu:</strong> Bell Euro</li>
-                        <li><strong>Xuất xứ:</strong> Châu Âu</li>
-                        <li><strong>Khối lượng:</strong> 150g</li>
-                        <li><strong>Hương vị:</strong> Bạc hà thảo mộc</li>
-                        <li><strong>Đối tượng:</strong> Mọi lứa tuổi</li>
-                        <li><strong>Công nghệ:</strong> Sinh học thảo mộc</li>
-                    </ul>
-                    <div class="price-tag">
-                        <span class="price">199.000đ</span>
-                        <button class="buy-btn">Mua ngay</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Testimonials Section -->
-    <section id="testimonials" class="testimonials">
-        <div class="container">
-            <h2 class="section-title">Khách Hàng Nói Gì Về Chúng Tôi</h2>
-            <div class="testimonials-grid">
-                <div class="testimonial-card">
-                    <div class="testimonial-content">
-                        <p>"Hương bạc hà thảo mộc rất dễ chịu, răng miệng sạch sẽ và thơm mát suốt ngày. Tôi đã sử dụng được 3 tháng và rất hài lòng với kết quả."</p>
-                    </div>
-                    <div class="testimonial-author">
-                        <img src="images/kem-danh-rang-cong-nghe-sinh-h_0x0_697787147.webp" alt="Khách hàng">
-                        <div class="author-info">
-                            <h4>Nguyễn Văn A</h4>
-                            <p>Khách hàng thân thiết</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="testimonial-card">
-                    <div class="testimonial-content">
-                        <p>"Sản phẩm rất an toàn, phù hợp cho cả gia đình sử dụng. Con tôi rất thích hương vị bạc hà tự nhiên, không cay nồng như các loại kem đánh răng khác."</p>
-                    </div>
-                    <div class="testimonial-author">
-                        <img src="images/Kem-danh-rang-cong-nghe-sinh-hoc-Bell-Home.jpg" alt="Khách hàng">
-                        <div class="author-info">
-                            <h4>Trần Thị B</h4>
-                            <p>Khách hàng mới</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="testimonial-card">
-                    <div class="testimonial-content">
-                        <p>"Tôi rất ấn tượng với công nghệ sinh học thảo mộc. Răng trắng sáng hơn và hơi thở thơm mát lâu hơn. Đặc biệt là không bị ê buốt như trước."</p>
-                    </div>
-                    <div class="testimonial-author">
-                        <img src="images/tuyp-kem-danh-rang-bellhome-2-1705043069.jpg" alt="Khách hàng">
-                        <div class="author-info">
-                            <h4>Lê Văn C</h4>
-                            <p>Khách hàng thường xuyên</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="order-guide" id="order">
-        <div class="container">
-            <h2 class="section-title"><b>Hướng Dẫn Đặt Hàng Đặc Biệt</b></h2>
+            <h2 class="section-title text-light"><b>Hướng Dẫn Đặt Hàng</b></h2>
             <div class="order-steps">
-                <div class="order-step" data-delay="0" data-tooltip="Khám phá mít sấy độc đáo: giòn tan, dẻo ngọt, ít đường, sấy lạnh cao cấp!">
+                <div class="order-step dark-card" data-delay="0"
+                    data-tooltip="Khám phá mít sấy độc đáo: giòn tan, dẻo ngọt, ít đường, sấy lạnh cao cấp!">
                     <div class="step-header">
                         <div class="step-number">1</div>
                         <div class="step-icon"><i class="fas fa-search"></i></div>
@@ -233,7 +463,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="order-step" data-delay="300" data-tooltip="Thêm sản phẩm vào giỏ, điều chỉnh số lượng dễ dàng chỉ trong 1 cú nhấp!">
+                <div class="order-step dark-card" data-delay="300"
+                    data-tooltip="Thêm sản phẩm vào giỏ, điều chỉnh số lượng dễ dàng chỉ trong 1 cú nhấp!">
                     <div class="step-header">
                         <div class="step-number">2</div>
                         <div class="step-icon"><i class="fas fa-cart-plus"></i></div>
@@ -243,7 +474,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="order-step" data-delay="600" data-tooltip="Nhập họ tên, số điện thoại, địa chỉ để chúng tôi giao hàng chính xác!">
+                <div class="order-step dark-card" data-delay="600"
+                    data-tooltip="Nhập họ tên, số điện thoại, địa chỉ để chúng tôi giao hàng chính xác!">
                     <div class="step-header">
                         <div class="step-number">3</div>
                         <div class="step-icon"><i class="fas fa-user-edit"></i></div>
@@ -253,7 +485,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="order-step" data-delay="900" data-tooltip="Thanh toán linh hoạt: COD, chuyển khoản, hoặc ví điện tử Momo, ZaloPay!">
+                <div class="order-step dark-card" data-delay="900"
+                    data-tooltip="Thanh toán linh hoạt: COD, chuyển khoản, hoặc ví điện tử Momo, ZaloPay!">
                     <div class="step-header">
                         <div class="step-number">4</div>
                         <div class="step-icon"><i class="fas fa-credit-card"></i></div>
@@ -263,7 +496,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="order-step" data-delay="1200" data-tooltip="Xác nhận tức thì, nhận hàng siêu tốc trong 24-48h, khắp mọi nơi!">
+                <div class="order-step dark-card" data-delay="1200"
+                    data-tooltip="Xác nhận tức thì, nhận hàng siêu tốc trong 24-48h, khắp mọi nơi!">
                     <div class="step-header">
                         <div class="step-number">5</div>
                         <div class="step-icon"><i class="fas fa-box"></i></div>
@@ -276,73 +510,66 @@
             </div>
         </div>
     </section>
-
-        <!-- Contact Section -->
-        <section id="contact" class="contact">
-            <div class="container">
-                <h2 class="section-title">Liên Hệ Với Chúng Tôi</h2>
-                <div class="contact-grid">
-                    <div class="contact-info">
-                        <div class="info-item">
-                            <i class="fas fa-phone"></i>
-                            <p>Hotline: 1900 1234</p>
-                        </div>
-                        <div class="info-item">
-                            <i class="fas fa-envelope"></i>
-                            <p>Email: info@belleuro.com</p>
-                        </div>
-                        <div class="info-item">
-                            <i class="fas fa-map-marker-alt"></i>
-                            <p>Địa chỉ: 123 Đường ABC, Quận XYZ, TP.HCM</p>
-                        </div>
-                    </div>
-                    <div class="contact-info"> 
-                         <form class="contact-form">
-                        <input type="text" placeholder="Họ và tên" required>
-                        <input type="email" placeholder="Email" required>
-                        <input type="tel" placeholder="Số điện thoại" required>
-                        <textarea placeholder="Nội dung" required></textarea>
-                        <button type="submit" class="submit-btn">Gửi tin nhắn</button>
-                    </form>
-                    </div>                   
-                </div>
-            </div>
-        </section>
+     
 
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <div class="footer-content">
-                <div class="footer-logo">
-                    <h2>Bell Euro</h2>
-                    <p>Công nghệ sinh học - Bảo vệ tự nhiên</p>
+          <div class="footer-content">
+            <!-- Logo + Slogan + Liên hệ -->
+            <div class="footer-brand">
+              <h2>Bell Euro</h2>
+              <p>Công nghệ sinh học - Bảo vệ tự nhiên</p>
+      
+              <div class="footer-contact">
+                <div class="contact-item">
+                  <i class="fas fa-phone"></i>
+                  <p>Hotline: 1900 1234</p>
                 </div>
-                <div class="footer-links">
-                    <h3>Liên kết</h3>
-                    <ul>
-                        <li><a href="#features">Tính năng</a></li>
-                        <li><a href="#ingredients">Thành phần</a></li>
-                        <li><a href="#benefits">Lợi ích</a></li>
-                        <li><a href="#testimonials">Đánh giá</a></li>
-                    </ul>
+                <div class="contact-item">
+                  <i class="fas fa-envelope"></i>
+                  <p>Email: info@belleuro.com</p>
                 </div>
-                <div class="footer-social">
-                    <h3>Theo dõi chúng tôi</h3>
-                    <div class="social-icons">
-                        <a href="#"><i class="fab fa-facebook"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-youtube"></i></a>
-                        <a href="#"><i class="fab fa-tiktok"></i></a>
-                    </div>
+                <div class="contact-item">
+                  <i class="fas fa-map-marker-alt"></i>
+                  <p>Địa chỉ: 123 Đường ABC, Quận XYZ, TP.HCM</p>
                 </div>
+              </div>
             </div>
-            <div class="footer-bottom">
-                <p>&copy; 2024 Bell Euro. Tất cả quyền được bảo lưu.</p>
+      
+            <!-- Liên kết nội trang -->
+            <div class="footer-links">
+              <h3>Liên kết</h3>
+              <ul>
+                <li><a href="#features">Tính năng</a></li>
+                <li><a href="#ingredients">Thành phần</a></li>
+                <li><a href="#benefits">Lợi ích</a></li>
+                <li><a href="#testimonials">Đánh giá</a></li>
+              </ul>
             </div>
+      
+            <!-- Mạng xã hội -->
+            <div class="footer-social">
+              <h3>Theo dõi chúng tôi</h3>
+              <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+                <a href="#"><i class="fab fa-tiktok"></i></a>
+              </div>
+            </div>
+          </div>
+      
+          <!-- Copyright -->
+          <div class="footer-bottom">
+            <p>&copy; 2024 Bell Euro. Tất cả quyền được bảo lưu.</p>
+          </div>
         </div>
-    </footer>
+      </footer>
+      
 
     <script src="landing.js"></script>
 
 </body>
-</html> 
+
+</html>
